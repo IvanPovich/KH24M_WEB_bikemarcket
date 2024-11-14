@@ -15,10 +15,19 @@ body {
   color: white;
   padding: 20px 0;
   text-align: center;
+  position: relative;
 }
 
 .header__title {
   font-size: 24px;
+}
+
+.header__cart {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 .header__nav {
@@ -109,6 +118,21 @@ body {
   color: #333;
 }
 
+.product-card__button {
+  background-color: #008080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.product-card__button:hover {
+  background-color: #006666;
+}
+
 .footer {
   background-color: #333;
   color: white;
@@ -119,4 +143,16 @@ body {
 
 .footer__text {
   font-size: 16px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
 }

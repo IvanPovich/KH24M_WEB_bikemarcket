@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"BikeWorld"</title>
+    <title>BikeWorld</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,6 +11,10 @@
     <header class="header">
         <div class="header__logo">
             <h1 class="header__title">BikeWorld</h1>
+        </div>
+        <div class="header__cart">
+            <span>Кошик:</span>
+            <span id="cart-count">0</span>
         </div>
         <nav class="header__nav">
             <ul class="nav__list">
@@ -32,28 +36,22 @@
             <h2 class="products__title">Наші популярні моделі</h2>
             <div class="products__list">
                 <div class="product-card">
-                    <img
-                      src="./image/product/mtb.webp"
-                      alt="Гірський велосипед" 
-                      class="product-card__image">
+                    <img src="./image/product/mtb.webp" alt="Гірський велосипед" class="product-card__image">
                     <h3 class="product-card__name">Гірський велосипед</h3>
                     <p class="product-card__price">Ціна: 9,000 грн</p>
+                    <button class="product-card__button">Додати в кошик</button>
                 </div>
                 <div class="product-card">
-                    <img
-                      src="./image/product/city.webp"
-                      alt="Міський велосипед"
-                      class="product-card__image">
+                    <img src="./image/product/city.webp" alt="Міський велосипед" class="product-card__image">
                     <h3 class="product-card__name">Міський велосипед</h3>
                     <p class="product-card__price">Ціна: 8,500 грн</p>
+                    <button class="product-card__button">Додати в кошик</button>
                 </div>
                 <div class="product-card">
-                    <img
-                      src="./image/product/kids.webp"
-                      alt="Дитячий велосипед"
-                      class="product-card__image">
+                    <img src="./image/product/kids.webp" alt="Дитячий велосипед" class="product-card__image">
                     <h3 class="product-card__name">Дитячий велосипед</h3>
                     <p class="product-card__price">Ціна: 4,200 грн</p>
+                    <button class="product-card__button">Додати в кошик</button>
                 </div>
             </div>
         </section>
@@ -63,5 +61,6 @@
         <p class="footer__text">&copy; 2024 Веломагазин "BikeWorld". Контакти: +38 (050) 999-99-99</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
